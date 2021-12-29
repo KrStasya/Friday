@@ -1,0 +1,35 @@
+
+.checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #212428;
+    border-radius: 10px;
+}
+
+.checkbox:checked {
+    appearance: none;
+    background: #f9004d;
+}
+
+.checkbox:focus {
+    border-radius: 10px;
+    border: 2px solid #16181c;
+}
+
+.spanClassName {
+    color: #212428;
+}
+
+.checkbox:hover {
+    background: linear-gradient(to right bottom, #212428, #16181c);
+    transition-property: all ;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in-out;
+    transition-delay: 0s;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+

@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Navigate, Route, Routes} from "react-router-dom";
+import { Login } from './login/Login';
+import {Registration} from "./registration/Registration";
+import {ProFile} from "./proFile/ProFile";
+import Error404 from "./404/Error404";
+import {PasswordRecovery} from "./Password/passwordRecovery/PasswordRecovery";
+import {NewPassword} from "./Password/newPassword/NewPassword";
+import TestPage from './testPage/TestPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="registration" element={<Registration/>}/>
+        <Route path="login" element={<Login/>}/>
+        <Route path="profile" element={<ProFile/>}/>
+        <Route path="/404" element={<Error404/>}/>
+        <Route path="password_recovery" element={<PasswordRecovery/>}/>
+        <Route path="new_password" element={<NewPassword/>}/>
+        <Route path="testPage" element={<TestPage/>}/>
+        <Route path="*" element={<Navigate to= "/404"/>}/>
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,26 @@
+.button {
+    font-size: 25px;
+    right: 25px;
+    width: 105px;
+    height: 60px;
+    line-height: 60px;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    border: 0 none;
+    top: 50px;
+    z-index: auto;
+    border-radius: 6px;
+    color: #f9004d;
+    opacity: 0.8;
+}
+button:hover {
+     background: linear-gradient(to right bottom, #212428, #16181c);
+    transition-property: all ;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in-out;
+    transition-delay: 0s;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+ }
+
