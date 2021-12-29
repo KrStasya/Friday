@@ -12,6 +12,7 @@ import TestPage from './testPage/TestPage';
 function App() {
   return (
     <div className="App">
+        {/*<TestPage/>*/}
       <Routes>
           <Route path="registration" element={<Registration/>}/>
           <Route path="login" element={<Login/>}/>
@@ -19,8 +20,8 @@ function App() {
           <Route path="/404" element={<Error404/>}/>
           <Route path="password_recovery" element={<PasswordRecovery/>}/>
           <Route path="new_password" element={<NewPassword/>}/>
-          <Route path="testPage" element={<TestPage/>}/>
-          {/*<Route path="*" element={<Navigate to= "/404"/>}/>*/}
+          <Route path="/" element={<TestPage/>}/>
+          <Route path="*" element={<Navigate to= "/404"/>}/>
       </Routes>
     </div>
   );
