@@ -22,7 +22,7 @@
 }
 
 .checkbox:hover {
-    background: linear-gradient(to right bottom, #212428, #16181c);
+    background: yellow;
     transition-property: all ;
     transition-duration: 0.5s;
     transition-timing-function:ease-in-out;
