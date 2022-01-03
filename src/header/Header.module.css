@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    margin: 0;
+    height: 50px;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+.header:hover{
+    background: linear-gradient(to right bottom, #212428, #16181c);
+    transition-property: all ;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in-out;
+}
+.navigate{
+    align-items: center;
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+}
+.Linktopage {
+    color: #f9004d;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    transition-property: all ;
+    transition-duration:0.4s ;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    text-decoration: none;
+}
+.Linktopage:hover{
+    opacity: 1 !important;
+    color: white;
+}
+
+
